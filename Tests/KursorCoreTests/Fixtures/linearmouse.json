@@ -1,0 +1,130 @@
+{
+  "$schema": "https://schema.linearmouse.app/0.9.5",
+  "schemes": [
+    {
+      "if": {
+        "device": {
+          "category": "mouse",
+          "vendorID": "0x1234",
+          "productID": "0x5678",
+          "productName": "Example Wireless Mouse"
+        }
+      },
+      "pointer": {
+        "speed": 0.5909,
+        "acceleration": 0
+      },
+      "scrolling": {
+        "speed": { "vertical": 4.3 },
+        "acceleration": { "vertical": 1 },
+        "reverse": { "vertical": true }
+      }
+    },
+    {
+      "if": {
+        "device": {
+          "category": "mouse",
+          "vendorID": "0x2345",
+          "productID": "0x42",
+          "productName": "Example Gaming Mouse"
+        }
+      },
+      "pointer": {
+        "speed": 0.1886,
+        "acceleration": 0.2085,
+        "disableAcceleration": false
+      },
+      "scrolling": {
+        "speed": { "vertical": 8.19 },
+        "acceleration": { "vertical": 1.09 },
+        "reverse": { "vertical": true }
+      },
+      "buttons": {
+        "mappings": [
+          { "button": 3, "action": "missionControl.spaceLeft", "command": false, "shift": false, "option": false, "control": false },
+          { "button": 4, "action": "missionControl.spaceRight", "repeat": false, "command": false, "shift": false, "option": false, "control": false },
+          { "button": 5, "action": "missionControl", "command": true, "shift": false, "option": false, "control": false }
+        ]
+      }
+    },
+    {
+      "if": {
+        "device": {
+          "category": "mouse",
+          "serialNumber": "000000000000",
+          "vendorID": "0x3456",
+          "productID": "0x9abc",
+          "productName": "Example Office Mouse"
+        }
+      },
+      "pointer": {
+        "speed": 0.3909,
+        "acceleration": 0
+      },
+      "scrolling": {
+        "speed": { "vertical": 8.66 },
+        "distance": { "vertical": "auto" },
+        "acceleration": { "vertical": 0.34 },
+        "reverse": { "vertical": true }
+      }
+    },
+    {
+      "if": {
+        "device": {
+          "category": "trackpad",
+          "vendorID": "0x5ac",
+          "productID": "0x1",
+          "productName": "Apple Internal Keyboard / Trackpad"
+        }
+      },
+      "scrolling": {
+        "acceleration": { "vertical": 1 },
+        "reverse": { "vertical": false }
+      }
+    },
+    {
+      "if": {
+        "device": {
+          "category": "mouse",
+          "vendorID": "0x4567",
+          "productID": "0xdef0",
+          "productName": "Example Basic Mouse"
+        }
+      },
+      "pointer": {
+        "speed": 0.0435,
+        "acceleration": 1.1123,
+        "disableAcceleration": true
+      },
+      "scrolling": {
+        "speed": { "vertical": 5.29 },
+        "acceleration": { "vertical": 1 },
+        "modifiers": {
+          "vertical": {
+            "shift": { "type": "changeSpeed", "scale": 7 },
+            "command": { "type": "auto" }
+          }
+        },
+        "reverse": { "vertical": true }
+      }
+    },
+    {
+      "if": {
+        "device": {
+          "category": "mouse",
+          "vendorID": "0x4567",
+          "productID": "0xdef0"
+        }
+      },
+      "pointer": {
+        "speed": 0.0737,
+        "acceleration": 0.8899
+      },
+      "scrolling": {
+        "speed": { "vertical": 1.55 },
+        "acceleration": { "vertical": 1 },
+        "reverse": { "vertical": true }
+      }
+    }
+  ]
+}
